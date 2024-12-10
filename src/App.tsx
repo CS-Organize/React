@@ -1,9 +1,10 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import NotFound from './components/notFound/NotFound';
 import Home from './components/home/Home';
 import State from './components/useState/useState';
 import Effect from './components/useEffect/useEffect';
-import NotFound from './components/notFound/NotFound';
+import Ref from './components/useRef/useRef';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/useState" element={<State />} />
         <Route path="/useEffect" element={<Effect />} />
+        <Route path="/useRef" element={<Ref />} />
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>

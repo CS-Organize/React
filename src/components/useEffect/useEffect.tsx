@@ -1,5 +1,12 @@
 // https://www.youtube.com/watch?v=kyodvzc5GHU&list=PLZ5oZ2KmQEYjwhSxjB_74PoU6pmFzgVMO&index=2
 
+/* 
+useEffect(callback, dependencies)
+1. useEffect(callback) - 렌더링 후마다 실행
+2. useEffect(callback, []) - 마운트 후 한 번만 실행
+3. useEffect(callback, [value]) - 마운트 후 한 번 실행, value가 변경될 때마다 실행
+*/
+
 import {useEffect, useState} from 'react';
 import Timer from './timer/Timer';
 
