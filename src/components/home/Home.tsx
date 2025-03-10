@@ -14,6 +14,9 @@ export default function Home() {
       <Link className={classes.link} to="/useRef">
         useRef
       </Link>
+      <Link className={classes.link} to="/useContext">
+        useContext
+      </Link>
     </div>
   );
 }

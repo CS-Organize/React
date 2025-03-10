@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import State from './components/useState/useState';
 import Effect from './components/useEffect/useEffect';
 import Ref from './components/useRef/useRef';
+import Context from './components/useContext/useContext';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/useState" element={<State />} />
         <Route path="/useEffect" element={<Effect />} />
         <Route path="/useRef" element={<Ref />} />
+        <Route path="/useContext" element={<Context />} />
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>
